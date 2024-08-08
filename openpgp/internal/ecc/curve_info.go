@@ -5,9 +5,9 @@ import (
 	"bytes"
 	"crypto/elliptic"
 
-	"github.com/ProtonMail/go-crypto/bitcurves"
-	"github.com/ProtonMail/go-crypto/brainpool"
-	"github.com/ProtonMail/go-crypto/openpgp/internal/encoding"
+	"github.com/Serg-Martyushev/go-crypto/bitcurves"
+	"github.com/Serg-Martyushev/go-crypto/brainpool"
+	"github.com/Serg-Martyushev/go-crypto/openpgp/internal/encoding"
 )
 
 type CurveInfo struct {

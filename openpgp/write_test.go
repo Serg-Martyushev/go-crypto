@@ -12,9 +12,9 @@ import (
 	"testing"
 	"time"
 
-	"github.com/ProtonMail/go-crypto/openpgp/errors"
-	"github.com/ProtonMail/go-crypto/openpgp/packet"
-	"github.com/ProtonMail/go-crypto/openpgp/s2k"
+	"github.com/Serg-Martyushev/go-crypto/openpgp/errors"
+	"github.com/Serg-Martyushev/go-crypto/openpgp/packet"
+	"github.com/Serg-Martyushev/go-crypto/openpgp/s2k"
 )
 
 const (

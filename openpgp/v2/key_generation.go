@@ -13,17 +13,17 @@ import (
 	"math/big"
 	"time"
 
-	"github.com/ProtonMail/go-crypto/openpgp/ecdh"
-	"github.com/ProtonMail/go-crypto/openpgp/ecdsa"
-	"github.com/ProtonMail/go-crypto/openpgp/ed25519"
-	"github.com/ProtonMail/go-crypto/openpgp/ed448"
-	"github.com/ProtonMail/go-crypto/openpgp/eddsa"
-	"github.com/ProtonMail/go-crypto/openpgp/errors"
-	"github.com/ProtonMail/go-crypto/openpgp/internal/algorithm"
-	"github.com/ProtonMail/go-crypto/openpgp/internal/ecc"
-	"github.com/ProtonMail/go-crypto/openpgp/packet"
-	"github.com/ProtonMail/go-crypto/openpgp/x25519"
-	"github.com/ProtonMail/go-crypto/openpgp/x448"
+	"github.com/Serg-Martyushev/go-crypto/openpgp/ecdh"
+	"github.com/Serg-Martyushev/go-crypto/openpgp/ecdsa"
+	"github.com/Serg-Martyushev/go-crypto/openpgp/ed25519"
+	"github.com/Serg-Martyushev/go-crypto/openpgp/ed448"
+	"github.com/Serg-Martyushev/go-crypto/openpgp/eddsa"
+	"github.com/Serg-Martyushev/go-crypto/openpgp/errors"
+	"github.com/Serg-Martyushev/go-crypto/openpgp/internal/algorithm"
+	"github.com/Serg-Martyushev/go-crypto/openpgp/internal/ecc"
+	"github.com/Serg-Martyushev/go-crypto/openpgp/packet"
+	"github.com/Serg-Martyushev/go-crypto/openpgp/x25519"
+	"github.com/Serg-Martyushev/go-crypto/openpgp/x448"
 )
 
 type userIdData struct {

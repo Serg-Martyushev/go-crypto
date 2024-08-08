@@ -7,7 +7,7 @@ import (
 	"testing"
 	"time"
 
-	"github.com/ProtonMail/go-crypto/openpgp/packet"
+	"github.com/Serg-Martyushev/go-crypto/openpgp/packet"
 )
 
 var foreignKeysV6 = []string{

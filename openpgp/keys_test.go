@@ -13,15 +13,15 @@ import (
 	"testing"
 	"time"
 
-	"github.com/ProtonMail/go-crypto/openpgp/armor"
-	"github.com/ProtonMail/go-crypto/openpgp/ecdh"
-	"github.com/ProtonMail/go-crypto/openpgp/ecdsa"
-	"github.com/ProtonMail/go-crypto/openpgp/eddsa"
-	"github.com/ProtonMail/go-crypto/openpgp/elgamal"
-	"github.com/ProtonMail/go-crypto/openpgp/errors"
-	"github.com/ProtonMail/go-crypto/openpgp/internal/algorithm"
-	"github.com/ProtonMail/go-crypto/openpgp/packet"
-	"github.com/ProtonMail/go-crypto/openpgp/s2k"
+	"github.com/Serg-Martyushev/go-crypto/openpgp/armor"
+	"github.com/Serg-Martyushev/go-crypto/openpgp/ecdh"
+	"github.com/Serg-Martyushev/go-crypto/openpgp/ecdsa"
+	"github.com/Serg-Martyushev/go-crypto/openpgp/eddsa"
+	"github.com/Serg-Martyushev/go-crypto/openpgp/elgamal"
+	"github.com/Serg-Martyushev/go-crypto/openpgp/errors"
+	"github.com/Serg-Martyushev/go-crypto/openpgp/internal/algorithm"
+	"github.com/Serg-Martyushev/go-crypto/openpgp/packet"
+	"github.com/Serg-Martyushev/go-crypto/openpgp/s2k"
 )
 
 var hashes = []crypto.Hash{

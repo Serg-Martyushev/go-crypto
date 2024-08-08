@@ -11,7 +11,7 @@ import (
 	"strings"
 	"testing"
 
-	"github.com/ProtonMail/go-crypto/openpgp/armor"
+	"github.com/Serg-Martyushev/go-crypto/openpgp/armor"
 )
 
 func TestSignatureReadAndReserialize(t *testing.T) {
