@@ -18,18 +18,18 @@ import (
 	"strconv"
 	"time"
 
-	"github.com/ProtonMail/go-crypto/openpgp/ecdh"
-	"github.com/ProtonMail/go-crypto/openpgp/ecdsa"
-	"github.com/ProtonMail/go-crypto/openpgp/ed25519"
-	"github.com/ProtonMail/go-crypto/openpgp/ed448"
-	"github.com/ProtonMail/go-crypto/openpgp/eddsa"
-	"github.com/ProtonMail/go-crypto/openpgp/elgamal"
-	"github.com/ProtonMail/go-crypto/openpgp/errors"
-	"github.com/ProtonMail/go-crypto/openpgp/internal/algorithm"
-	"github.com/ProtonMail/go-crypto/openpgp/internal/ecc"
-	"github.com/ProtonMail/go-crypto/openpgp/internal/encoding"
-	"github.com/ProtonMail/go-crypto/openpgp/x25519"
-	"github.com/ProtonMail/go-crypto/openpgp/x448"
+	"github.com/Serg-Martyushev/go-crypto/openpgp/ecdh"
+	"github.com/Serg-Martyushev/go-crypto/openpgp/ecdsa"
+	"github.com/Serg-Martyushev/go-crypto/openpgp/ed25519"
+	"github.com/Serg-Martyushev/go-crypto/openpgp/ed448"
+	"github.com/Serg-Martyushev/go-crypto/openpgp/eddsa"
+	"github.com/Serg-Martyushev/go-crypto/openpgp/elgamal"
+	"github.com/Serg-Martyushev/go-crypto/openpgp/errors"
+	"github.com/Serg-Martyushev/go-crypto/openpgp/internal/algorithm"
+	"github.com/Serg-Martyushev/go-crypto/openpgp/internal/ecc"
+	"github.com/Serg-Martyushev/go-crypto/openpgp/internal/encoding"
+	"github.com/Serg-Martyushev/go-crypto/openpgp/x25519"
+	"github.com/Serg-Martyushev/go-crypto/openpgp/x448"
 )
 
 // PublicKey represents an OpenPGP public key. See RFC 4880, section 5.5.2.
@@ -779,7 +779,7 @@ func (pk *PublicKey) VerifySignature(signed hash.Hash, sig *Signature) (err erro
 	}
 	signed.Write(sig.HashSuffix)
 	hashBytes := signed.Sum(nil)
-	// see discussion https://github.com/ProtonMail/go-crypto/issues/107
+	// see discussion https://github.com/Serg-Martyushev/go-crypto/issues/107
 	if sig.Version >= 5 && (hashBytes[0] != sig.HashTag[0] || hashBytes[1] != sig.HashTag[1]) {
 		return errors.SignatureError("hash tag doesn't match")
 	}

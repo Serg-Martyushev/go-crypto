@@ -1,4 +1,4 @@
-module github.com/ProtonMail/go-crypto
+module github.com/Serg-Martyushev/go-crypto
 
 go 1.17
 

@@ -5,8 +5,8 @@ package packet
 import (
 	"io"
 
-	"github.com/ProtonMail/go-crypto/openpgp/errors"
-	"github.com/ProtonMail/go-crypto/openpgp/internal/algorithm"
+	"github.com/Serg-Martyushev/go-crypto/openpgp/errors"
+	"github.com/Serg-Martyushev/go-crypto/openpgp/internal/algorithm"
 )
 
 // AEADEncrypted represents an AEAD Encrypted Packet.

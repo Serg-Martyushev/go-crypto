@@ -5,7 +5,7 @@
 // Package s2k implements the various OpenPGP string-to-key transforms as
 // specified in RFC 4800 section 3.7.1, and Argon2 specified in
 // draft-ietf-openpgp-crypto-refresh-08 section 3.7.1.4.
-package s2k // import "github.com/ProtonMail/go-crypto/openpgp/s2k"
+package s2k // import "github.com/Serg-Martyushev/go-crypto/openpgp/s2k"
 
 import (
 	"crypto"
@@ -13,8 +13,8 @@ import (
 	"io"
 	"strconv"
 
-	"github.com/ProtonMail/go-crypto/openpgp/errors"
-	"github.com/ProtonMail/go-crypto/openpgp/internal/algorithm"
+	"github.com/Serg-Martyushev/go-crypto/openpgp/errors"
+	"github.com/Serg-Martyushev/go-crypto/openpgp/internal/algorithm"
 	"golang.org/x/crypto/argon2"
 )
 
@@ -199,8 +199,8 @@ func Generate(rand io.Reader, c *Config) (*Params, error) {
 		}
 
 		params = &Params{
-			mode:      SaltedS2K,
-			hashId:    hashId,
+			mode:   SaltedS2K,
+			hashId: hashId,
 		}
 	} else { // Enforce IteratedSaltedS2K method otherwise
 		hashId, ok := algorithm.HashToHashId(c.hash())

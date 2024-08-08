@@ -10,8 +10,8 @@ import (
 	"io"
 	"strconv"
 
-	"github.com/ProtonMail/go-crypto/openpgp/errors"
-	"github.com/ProtonMail/go-crypto/openpgp/internal/algorithm"
+	"github.com/Serg-Martyushev/go-crypto/openpgp/errors"
+	"github.com/Serg-Martyushev/go-crypto/openpgp/internal/algorithm"
 )
 
 // OnePassSignature represents a one-pass signature packet. See RFC 4880,

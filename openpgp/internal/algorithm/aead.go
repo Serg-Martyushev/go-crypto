@@ -4,8 +4,8 @@ package algorithm
 
 import (
 	"crypto/cipher"
-	"github.com/ProtonMail/go-crypto/eax"
-	"github.com/ProtonMail/go-crypto/ocb"
+	"github.com/Serg-Martyushev/go-crypto/eax"
+	"github.com/Serg-Martyushev/go-crypto/ocb"
 )
 
 // AEADMode defines the Authenticated Encryption with Associated Data mode of

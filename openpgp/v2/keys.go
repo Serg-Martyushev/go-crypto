@@ -10,9 +10,9 @@ import (
 	"io"
 	"time"
 
-	"github.com/ProtonMail/go-crypto/openpgp/armor"
-	"github.com/ProtonMail/go-crypto/openpgp/errors"
-	"github.com/ProtonMail/go-crypto/openpgp/packet"
+	"github.com/Serg-Martyushev/go-crypto/openpgp/armor"
+	"github.com/Serg-Martyushev/go-crypto/openpgp/errors"
+	"github.com/Serg-Martyushev/go-crypto/openpgp/packet"
 )
 
 // PublicKeyType is the armor type for a PGP public key.
@@ -61,7 +61,7 @@ func (e *Entity) PrimaryIdentity(date time.Time, config *packet.Config) (*packet
 	var primaryIdentityCandidatesSelfSigs []*packet.Signature
 	for _, identity := range e.Identities {
 		selfSig, err := identity.Verify(date, config) // identity must be valid at date
-		if err == nil {                       // verification is successful
+		if err == nil {                               // verification is successful
 			primaryIdentityCandidates = append(primaryIdentityCandidates, identity)
 			primaryIdentityCandidatesSelfSigs = append(primaryIdentityCandidatesSelfSigs, selfSig)
 		}

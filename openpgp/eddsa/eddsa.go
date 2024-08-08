@@ -4,7 +4,7 @@ package eddsa
 
 import (
 	"errors"
-	"github.com/ProtonMail/go-crypto/openpgp/internal/ecc"
+	"github.com/Serg-Martyushev/go-crypto/openpgp/internal/ecc"
 	"io"
 )
 

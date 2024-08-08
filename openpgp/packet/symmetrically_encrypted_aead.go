@@ -10,7 +10,7 @@ import (
 	"io"
 	"strconv"
 
-	"github.com/ProtonMail/go-crypto/openpgp/errors"
+	"github.com/Serg-Martyushev/go-crypto/openpgp/errors"
 	"golang.org/x/crypto/hkdf"
 )
 
